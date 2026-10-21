@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lawsons Partners Prototype</title>
+<meta name="description" content="Independent advice for internationally mobile professionals and families.">
+<link rel="preload" href="assets/fonts/SourceSerif4-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/logos/lp-logo-ink.png" as="image">
+<link rel="stylesheet" href="site.css?v=11">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Entry: the LP mark is drawn as a line, fills from the bottom like the ribbon rising, the name is written out, then the logo settles into the nav. -->
+<div class="intro" id="intro" aria-hidden="true" hidden>
+  <div class="intro-logo">
+    <img class="il il-mark" src="assets/logos/lp-logo-ink.png" alt="">
+    <img class="il il-w1" src="assets/logos/lp-logo-ink.png" alt="">
+    <img class="il il-w2" src="assets/logos/lp-logo-ink.png" alt="">
+    <svg class="il-trace" viewBox="0 0 760 790" fill="none">
+      <defs><linearGradient id="lpStroke" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#F39A3B"/><stop offset=".45" stop-color="#E9C24A"/><stop offset=".7" stop-color="#3CC1B6"/><stop offset="1" stop-color="#149ED8"/></linearGradient></defs>
+      <path pathLength="1" d="M25 152 L260 28 L260 420 L150 478 L245 530 L245 662 L100 592 C50 568 25 548 25 520 Z"/>
+      <path pathLength="1" d="M345 135 L610 135 C690 135 735 195 735 265 L735 330 C735 385 705 425 650 450 L455 540 L455 680 L275 760 L275 490 L620 318 C645 304 645 262 600 247 L457 245 L457 330 L345 378 Z"/>
+    </svg>
+  </div>
+</div>
+
+<!-- One ribbon runs behind the whole page. It folds at each chapter of an international life. -->
+<canvas class="ribbon" id="ribbon" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <a class="wm" href="#top"><img src="assets/logos/lp-logo-ink.png" alt="Lawsons Partners" width="1641" height="379"></a>
+  <nav class="links" aria-label="Primary"><a href="#help">How we help</a><a href="#providers">Providers</a><a href="#standards">Our standards</a><a href="#contact">Contact</a></nav>
+  <a class="btn sm" href="#contact">Speak to an adviser</a>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" data-ribbon="hero" aria-labelledby="h-hero">
+    <div class="shell">
+      <h1 id="h-hero" class="reveal">Independent advice for <em>international lives.</em></h1>
+      <p class="support reveal">Lawsons Partners advisers work with people whose careers, families and savings cross borders, and they stay with you when you move.</p>
+      <div class="actions reveal"><a class="btn" href="#contact">Speak to an adviser</a><a class="link" href="#help">How we help</a></div>
+    </div>
+  </section>
+
+  <section class="ch" id="borders" data-ribbon="borders" aria-labelledby="h-borders">
+    <div class="shell cols">
+      <h2 class="label" id="h-borders">Lives that cross borders</h2>
+      <div>
+        <p class="statement reveal">A move abroad shouldn’t mean starting again.</p>
+        <p class="lede-p reveal">A pension left in one country, savings in another, and an adviser who stops at the border. Many international families end up with a plan in pieces.</p>
+        <dl class="pairs reveal">
+          <div><dt>Pensions in several countries</dt><dd>Brought into one view, with the options for each explained.</dd></div>
+          <div><dt>Advice that stops when you move</dt><dd>An adviser who works across the countries you live in.</dd></div>
+          <div><dt>Currency and tax questions</dt><dd>Coordinated with the right specialists where tax is involved.</dd></div>
+          <div><dt>Is my adviser independent?</dt><dd>Yes, and their standards are checked by Lawsons.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="ch deep" id="help" data-ribbon="help" aria-labelledby="h-help">
+    <div class="shell">
+      <h2 class="label" id="h-help">How we help</h2>
+      <p class="statement reveal">Advice for each chapter, wherever it happens.</p>
+      <ol class="chapters">
+        <li class="reveal"><h3>Arriving somewhere new</h3><p>Setting up savings and protection when you start a life abroad.</p></li>
+        <li class="reveal"><h3>Building wealth</h3><p>Investing to a plan that isn’t tied to one country.</p></li>
+        <li class="reveal"><h3>Family and protection</h3><p>Making sure the people who depend on you are looked after.</p></li>
+        <li class="reveal"><h3>Retirement, wherever it is</h3><p>Planning an income for the place you want to retire.</p></li>
+      </ol>
+      <p class="note-draft"> Service areas to confirm with the consultants before launch.</p>
+    </div>
+  </section>
+
+  <section class="ch providers" id="providers" data-ribbon="providers" aria-labelledby="h-providers">
+    <div class="shell cols">
+      <h2 class="label" id="h-providers">Providers</h2>
+      <div>
+        <p class="statement reveal">A wide choice of providers, not one house’s products.</p>
+        <p class="figure reveal"><span class="num"><span class="count" data-to="90">90</span>+</span><span class="cap">providers on the Lawsons panel, across investments, pensions, protection and property.</span></p>
+        <p class="lede-p reveal">Your adviser recommends from that panel, choosing what fits your situation and the countries you live in.</p>
+      </div>
+    </div>
+    <div class="lines reveal" role="region" aria-label="Some of the providers on the panel">
+        <div class="line logos" data-dir="-1">
+          <ul class="track">
+            <li class="lg lg-7im"><span class="lg-img"><img class="ink" src="assets/logos/7im-ink.png" alt="7IM"><img class="col" src="assets/logos/7im.png" alt=""></span><span class="pc">Investment platform</span></li>
+            <li class="lg lg-canaccord"><span class="lg-img"><img class="ink" src="assets/logos/canaccord-ink.png" alt="Canaccord Genuity"><img class="col" src="assets/logos/canaccord.png" alt=""></span><span class="pc">Investment management</span></li>
+            <li class="lg lg-liberty"><span class="lg-img"><img class="ink" src="assets/logos/liberty-ink.png" alt="Liberty"><img class="col" src="assets/logos/liberty.png" alt=""></span><span class="pc">Pensions</span></li>
+            <li class="lg lg-api-global"><span class="lg-img"><img class="ink" src="assets/logos/api-global-ink.png" alt="API Global"><img class="col" src="assets/logos/api-global.png" alt=""></span><span class="pc">Property</span></li>
+            <li class="lg lg-dominion"><span class="lg-img"><img class="ink" src="assets/logos/dominion-ink.png" alt="Dominion Capital Strategies"><img class="col" src="assets/logos/dominion.png" alt=""></span><span class="pc">Investment platform</span></li>
+            <li class="lg lg-passport-legacy"><span class="lg-img"><img class="ink" src="assets/logos/passport-legacy-ink.png" alt="Passport Legacy"><img class="col" src="assets/logos/passport-legacy.png" alt=""></span><span class="pc">Residence and citizenship</span></li>
+            <li class="lg lg-quilter-cheviot"><span class="lg-img"><img class="ink" src="assets/logos/quilter-cheviot-ink.png" alt="Quilter Cheviot"><img class="col" src="assets/logos/quilter-cheviot.png" alt=""></span><span class="pc">Investment management</span></li>
+            <li class="lg lg-utmost"><span class="lg-img"><img class="ink" src="assets/logos/utmost-ink.png" alt="Utmost International"><img class="col" src="assets/logos/utmost.png" alt=""></span><span class="pc">Life assurance</span></li>
+            <li class="lg lg-stm-malta"><span class="lg-img"><img class="ink" src="assets/logos/stm-malta-ink.png" alt="STM Malta"><img class="col" src="assets/logos/stm-malta.png" alt=""></span><span class="pc">Pensions and trustees</span></li>
+          </ul>
+        </div>
+        <div class="line logos" data-dir="1">
+          <ul class="track">
+            <li class="lg lg-rathbones"><span class="lg-img"><img class="ink" src="assets/logos/rathbones-ink.png" alt="Rathbones"><img class="col" src="assets/logos/rathbones.png" alt=""></span><span class="pc">Investment management</span></li>
+            <li class="lg lg-william-russell"><span class="lg-img"><img class="ink" src="assets/logos/william-russell-ink.png" alt="William Russell"><img class="col" src="assets/logos/william-russell.png" alt=""></span><span class="pc">Health and protection</span></li>
+            <li class="lg lg-novia-global"><span class="lg-img"><img class="ink" src="assets/logos/novia-global-ink.png" alt="Novia Global"><img class="col" src="assets/logos/novia-global.png" alt=""></span><span class="pc">Investment platform</span></li>
+            <li><span class="pn">Momentum Pensions</span><span class="pc">Pensions</span></li>
+            <li class="lg lg-latitude"><span class="lg-img"><img class="ink" src="assets/logos/latitude-ink.png" alt="Latitude"><img class="col" src="assets/logos/latitude.png" alt=""></span><span class="pc">Residence and citizenship</span></li>
+            <li class="lg lg-hansard"><span class="lg-img"><img class="ink" src="assets/logos/hansard-ink.png" alt="Hansard International"><img class="col" src="assets/logos/hansard.png" alt=""></span><span class="pc">Life assurance</span></li>
+            <li><span class="pn">Brewin Dolphin</span><span class="pc">Investment management</span></li>
+            <li class="lg lg-moving-currency"><span class="lg-img"><img class="ink" src="assets/logos/moving-currency-ink.png" alt="Moving Currency"><img class="col" src="assets/logos/moving-currency.png" alt=""></span><span class="pc">Currency and payments</span></li>
+            <li class="lg lg-moventum"><span class="lg-img"><img class="ink" src="assets/logos/moventum-ink.png" alt="Moventum"><img class="col" src="assets/logos/moventum.png" alt=""></span><span class="pc">Investment platform</span></li>
+            <li class="lg lg-gallagher"><span class="lg-img"><img class="ink" src="assets/logos/gallagher-ink.png" alt="Gallagher"><img class="col" src="assets/logos/gallagher.png" alt=""></span><span class="pc">Insurance</span></li>
+            <li><span class="pn">Trireme Pensions</span><span class="pc">Pensions</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="shell lines-foot"><button class="lines-pause" type="button">Pause the names</button></div>
+    <div class="shell">
+    </div>
+  </section>
+
+  <section class="ch" id="standards" data-ribbon="standards" aria-labelledby="h-standards">
+    <div class="shell cols">
+      <h2 class="label" id="h-standards">The name behind your adviser</h2>
+      <div>
+        <p class="statement reveal">Every Lawsons Partners adviser is checked before they work with you.</p>
+        <p class="lede-p reveal">Your adviser is independent. Behind them, Lawsons makes sure they are who they say they are and keeps checking their work.</p>
+        <ol class="checks reveal">
+          <li><h3>Background checked</h3><p>Identity, professional background and standing, before anything starts.</p></li>
+          <li><h3>Working to agreed terms</h3><p>Every adviser signs up to the same standards.</p></li>
+          <li><h3>Files reviewed</h3><p>Advisers’ files are reviewed on a regular, risk-based rhythm.</p></li>
+        </ol>
+        <p class="boundary reveal">Your adviser gives the advice. Lawsons Partners does not hold or manage your money.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ch contact" id="contact" data-ribbon="contact" aria-labelledby="h-contact">
+    <div class="shell talk">
+      <div>
+        <h2 class="big reveal" id="h-contact">Speak to an adviser.</h2>
+        <p class="lede-p reveal">Tell us where you live and what you’d like help with. An adviser will get in touch to arrange a first conversation.</p>
+      </div>
+      <form class="enquiry reveal" id="enquiry" name="enquiry" method="POST" action="https://lawsons-partners.pages.dev/api/enquiry" novalidate aria-describedby="form-note">
+        <p hidden><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="f-country">Country you live in</label><input id="f-country" name="country" autocomplete="country-name" required></div>
+        <div class="field"><label for="f-help">What would you like help with?</label><textarea id="f-help" name="help" rows="3" required placeholder="A line or two is plenty."></textarea></div>
+        <button class="btn" type="submit">Speak to an adviser</button>
+        <p class="form-note" id="form-note">We use your details only to reply to you. See our <a href="privacy.html">privacy notice</a>.</p>
+        <div class="form-status" role="status" aria-live="polite" hidden></div>
+        <p class="alt-contact">Prefer email? <a href="mailto:info@lawsonspartners.com">info@lawsonspartners.com</a></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="shell">
+    <p class="foot-wm"><img src="assets/logos/lp-logo-light.png" alt="Lawsons Partners" width="1641" height="379"></p>
+    <p><a href="privacy.html">Privacy notice</a> · © 2026 Lawsons Partners</p>
+  </div>
+</footer>
+
+<script src="site.js?v=12" defer></script>
+</body>
+</html>
