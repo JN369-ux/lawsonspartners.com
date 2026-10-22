@@ -1,0 +1,8 @@
+---
+# cPanel Git Version Control: "Deploy HEAD Commit" copies the site into this domain's web root.
+# If lawsonspartners.com is an addon domain, change DEPLOYPATH to its document root (cPanel → Domains shows it).
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html/
+    - /bin/cp -R site/. $DEPLOYPATH
+    - /bin/find $DEPLOYPATH -type f -newer .cpanel.yml -exec chmod 644 {} \;

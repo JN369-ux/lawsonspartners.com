@@ -128,10 +128,10 @@
     });
     if (first) { first.focus(); return; }
     const d = new FormData(form), btn = form.querySelector('button[type="submit"]'); btn && (btn.disabled = true);
-    const body = `Name: ${d.get('name')}\nEmail: ${d.get('email')}\nCountry: ${d.get('country')}\n\n${d.get('help')}`;
-    const href = 'mailto:info@lawsonspartners.com?subject=' + encodeURIComponent('Speak to an adviser') + '&body=' + encodeURIComponent(body);
+    const body = `Name: ${d.get('name')}\nEmail: ${d.get('email')}\nCountry: ${d.get('country')}\n\n${d.get('help') || ''}`;
+    const href = 'mailto:info@lawsonspartners.com?subject=' + encodeURIComponent('Speak with Lawsons Partners') + '&body=' + encodeURIComponent(body);
     fetch('https://lawsons-partners.pages.dev/api/enquiry', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(Object.fromEntries(d)) })
-      .then(r => { if (!r.ok) throw new Error(r.status); status.hidden = false; status.textContent = 'Thank you. Your message has been sent, and an adviser will be in touch.'; form.reset(); })
+      .then(r => { if (!r.ok) throw new Error(r.status); status.hidden = false; status.textContent = 'Thank you. We’ve received your message and will be in touch.'; form.reset(); })
       .catch(() => { status.hidden = false; status.innerHTML = 'Sorry, that didn’t send. <a href="' + href + '">Send it by email instead</a> — your message is already filled in.'; })
       .finally(() => { btn && (btn.disabled = false); });
   });

@@ -174,3 +174,6 @@ h1 em{font-style:italic;color:var(--teal)}
 .intro.fill .il-trace{opacity:0}
 .intro-nav .wm{opacity:0}
 .intro-on .hero .reveal.in{opacity:0;transform:translateY(24px)}
+
+/* 22 Oct 2026: the old site's explanation of roles, kept in the footer */
+.foot .legal{max-width:72ch;font-size:13.5px;line-height:1.55;opacity:.85;margin:0 0 12px}
